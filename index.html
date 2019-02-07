@@ -34646,7 +34646,7 @@ function webGLStart() {
     yRot = yRot+1;
     rotMat.rotate(xRot/5, 1,0,0);  rotMat.rotate(yRot/5, 0,1,0);
     rotMat.rotate(zRot, 0,0,1);
-    xRot = zRot =0;
+    xRot = zRot =yRot=0;
     mvMatrix.load( rotMat );
     mvMatrix.translate(0, -.1, transl);
 
