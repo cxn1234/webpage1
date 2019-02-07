@@ -115,6 +115,7 @@ function initGL2(){
 }
 var then = 0;
 function render(now){
+	now = now+1;
   now*=0.01;
   const deltaTime = now-then;
   then = now;

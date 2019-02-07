@@ -34649,7 +34649,7 @@ function webGLStart() {
     mvMatrix.load( rotMat );
     mvMatrix.translate(0, -.1, transl);
 
-    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+    //gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
     gl.uniformMatrix4fv( mvMatLoc, false, new Float32Array(mvMatrix.getAsArray()) );
     gl.drawElements(gl.TRIANGLES, fl, gl.UNSIGNED_SHORT, 0);
     gl.flush ();
